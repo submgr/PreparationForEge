@@ -1,0 +1,6 @@
+def Del(n, m):
+    return n % m == 0
+
+for A in range(1, 10000):
+    if all(((Del(x, 175) <= (not(Del(x, 25))) ) or (2 * x + A >= 1780)) for x in range(1, 1000)):
+        print(A)
